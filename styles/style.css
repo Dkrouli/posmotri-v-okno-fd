@@ -40,7 +40,6 @@ fieldset {
   justify-content: space-between;
   align-items: end;
   width: 1140px;
-  height: 534px;
   gap: 29px;
 }
 
@@ -48,7 +47,6 @@ fieldset {
   display: flex;
   flex-direction: column;
   width: 711px;
-  height: 456px;
 }
 
 .result__video-container {
@@ -69,7 +67,6 @@ fieldset {
   display: inline-flex;
   align-items: start;
   width: 711px;
-  height: 54px;
   gap: 40px;
 }
 
@@ -112,10 +109,8 @@ fieldset {
 .search-form__fieldset-title {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 
 .search-form__label {
@@ -139,10 +134,8 @@ fieldset {
 .search-form__textfield {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
   border-right: 0;
   border-left: 0;
   border-top: 1px solid #fff;
@@ -180,7 +173,6 @@ fieldset {
 .title {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
@@ -209,7 +201,6 @@ fieldset {
   position: relative;
   height: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .content__list-container:last-child {
@@ -229,23 +220,23 @@ fieldset {
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 30px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-transform: uppercase;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .content__video-card-description-container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   max-width: 194px;
   flex-grow: 1;
   flex-basis: 0;
+  margin-top: 2px;
+  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin-top: 2px;
 }
 
 .content__video-card-thumbnail {
@@ -269,10 +260,8 @@ fieldset {
 .button {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-align: center;
   color: #fff;
   background-color: transparent;
@@ -283,13 +272,13 @@ fieldset {
 
 .search-form__submit-button {
   min-width: 194px;
-  height: 34px;
+  min-height: 34px;
   align-self: end;
 }
 
 .more-button {
   width: 390px;
-  height: 34px;
+  min-height: 34px;
 }
 
 .button:hover {
@@ -306,6 +295,7 @@ fieldset {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .content__card-link {
