@@ -223,20 +223,25 @@ fieldset {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.content__video-card-description-container {
+.content__video-card-description {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1;
+}
+
+.content__video-card-description-container {
   max-width: 194px;
   flex-grow: 1;
   flex-basis: 0;
   margin-top: 2px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
